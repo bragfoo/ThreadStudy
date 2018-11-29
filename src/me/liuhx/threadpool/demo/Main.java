@@ -23,7 +23,7 @@ public class Main {
         long period1 = 60;
         // 从现在开始1秒钟之后，每隔1秒钟执行一次job1
         service.scheduleAtFixedRate(
-                new Scheduled(executeMethod), initialDelay1,
+                ()-> executeMethod.StudentTest(), initialDelay1,
                 period1, TimeUnit.SECONDS);
 
 
